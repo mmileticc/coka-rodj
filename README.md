@@ -1,4 +1,4 @@
-# Coka puni 20 · Disco Girl Party 🪩
+# Coka puni 20 · Disco Party 🪩
 
 Pozivnica za rođendan. Čist HTML, CSS i JS uz Bootstrap 5 (CDN), bez build koraka, pa radi na bilo kom statičkom hostingu.
 
@@ -8,9 +8,9 @@ Sve slike idu u folder `img/`, a putanje se podešavaju u `js/config.js` (deo `s
 
 | Fajl | Šta je |
 |---|---|
-| `img/coka.jpg` | glavna slika slavljenice, najbolje uspravna (4:5) |
+| `img/coka.jpeg` | glavna slika slavljenice, najbolje uspravna (4:5) |
 | `img/ulaz.jpg` | slika na kojoj je nacrtan ulaz u zgradu |
-| `img/inspo/inspo1.jpg` … | outfit inspiracija, može ih biti koliko hoćeš |
+| `img/inspo/inspo1.jpeg` … | outfit inspiracija, može ih biti koliko hoćeš |
 
 Ako slika fali, lokalno se vidi prugasti placeholder sa imenom fajla, a na javnom sajtu se ta slika samo ne prikazuje.
 Za opis ispod slike popuni polje `opis` u `config.js`.

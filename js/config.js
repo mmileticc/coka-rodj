@@ -16,7 +16,7 @@ window.INVITE = {
   /* ---------- Osnovno ---------- */
   ime: "Coka",
   godine: 20,
-  tema: "Disco Girl Party",
+  tema: "Disco Party",
 
   // Datum i vreme žurke (beogradsko vreme, +01:00 je zimsko računanje vremena)
   datum: "2026-11-26T20:00:00+01:00",
@@ -33,11 +33,12 @@ window.INVITE = {
 
   /* ---------- Poruka (svaki string je jedan pasus) ---------- */
   poruka: {
-    naslov: "Ulazim u dvadesete!",
+    naslov: "Dvadesete gazim…",
     pasusi: [
-      "Ulazim u dvadesete i nemam nameru da to uradim tiho.",
-      "Izvadite šljokice iz ormara, zagrejte noge i dođite da zajedno otvorimo novu deceniju uz muziku, smeh i previše selfija.",
-      "Jedino pravilo večeri: što više sija, to bolje. ✨",
+      "Nije mi bilo teško naći razlog da zajedno pijemo.",
+      "✨ …iii zato dobro mi je sasvim 🪩",
+      "Dođite zagrejani i spremni da u četvrtak uveče zajedno komšijama objašnjavamo nastalu situaciju. 😂🥂",
+      "Jedino pravilo večeri: što više sijajte da bi vam odobrili ulaz! 💃🕺",
     ],
     potpis: "Vaša Coka 💖",
   },
@@ -50,10 +51,10 @@ window.INVITE = {
 
   /* ---------- Dress code ---------- */
   dressCode: {
-    naslov: "Disco Girl",
-    opis: "Šljokice, metalik, srebro, crna i malo roze. Platforme su dozvoljene, perje se podrazumeva.",
+    naslov: "Disco Party",
+    opis: "Šljokice, cirkoni, metalik, srebro i crna. Ili nešto ludo, iznenadite me!",
     // "Čipovi" koji se prikazuju ispod opisa
-    tagovi: ["šljokice", "metalik", "srebro", "crna", "roze", "platforme", "perje", "disko naočare"],
+    tagovi: ["šljokice", "cirkoni", "metalik", "srebro", "crna", "zabavno (iznenadite me)"],
   },
 
   /* ---------- Lokacija ---------- */
@@ -77,7 +78,7 @@ window.INVITE = {
    */
   slike: {
     // Glavna slika slavljenice (pored poruke)
-    slavljenica: "img/coka.jpg",
+    slavljenica: "img/coka.jpeg",
 
     // Slike za lakše pronalaženje zgrade
     ulaz: [
@@ -86,10 +87,10 @@ window.INVITE = {
 
     // Outfit inspiracija (dodaj ili obriši koliko hoćeš)
     inspo: [
-      { src: "img/inspo/inspo1.jpg", opis: "" },
-      { src: "img/inspo/inspo2.jpg", opis: "" },
-      { src: "img/inspo/inspo3.jpg", opis: "" },
-      { src: "img/inspo/inspo4.jpg", opis: "" },
+      { src: "img/inspo/inspo1.jpeg", opis: "" },
+      { src: "img/inspo/inspo2.jpeg", opis: "" },
+      { src: "img/inspo/inspo3.jpeg", opis: "" },
+      { src: "img/inspo/inspo4.jpeg", opis: "" },
     ],
   },
 
