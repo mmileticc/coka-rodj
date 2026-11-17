@@ -40,7 +40,9 @@
   <!-- ============ INTRO ============ -->
   <div id="intro" role="dialog" aria-modal="true" aria-labelledby="intro-title">
     <div class="intro-inner text-center px-4">
-      <canvas class="disco-ball intro-ball" width="160" height="160" aria-hidden="true"></canvas>
+      <div class="ball-wrap intro-wrap" aria-hidden="true">
+        <canvas class="disco-ball intro-ball" width="160" height="160"></canvas>
+      </div>
       <h1 id="intro-title" class="intro-title mt-4" data-text="intro.naslov"></h1>
       <p class="intro-sub" data-text="intro.podnaslov"></p>
       <button id="open-btn" type="button" class="btn btn-chrome btn-lg mt-3" data-text="intro.dugme"></button>
@@ -52,10 +54,12 @@
 
     <!-- ============ HERO ============ -->
     <header class="hero text-center">
-      <div class="ball-hanger" aria-hidden="true">
-        <span class="ball-string"></span>
-        <canvas id="hero-ball" class="disco-ball" width="220" height="220"
-                title="Klikni me 🪩" role="button" aria-label="Disko kugla, klikni za disko režim" tabindex="0"></canvas>
+      <div class="ball-hanger">
+        <span class="ball-string" aria-hidden="true"></span>
+        <div class="ball-wrap hero-wrap">
+          <canvas id="hero-ball" class="disco-ball" width="220" height="220"
+                  title="Klikni me 🪩" role="button" aria-label="Disko kugla, klikni za disko režim" tabindex="0"></canvas>
+        </div>
       </div>
 
       <p class="eyebrow mb-1" data-text="tema"></p>
