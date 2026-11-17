@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+  Generator za preview sliku (img/og-image.jpg, 1200x630).
+  Ponovno generisanje: pokreni lokalni server (python -m http.server 5500) pa:
+  msedge --headless --disable-gpu --hide-scrollbars --window-size=1200,630 --virtual-time-budget=6000
+         --screenshot=og.png http://127.0.0.1:5500/tools/og.html
+  i konvertuj og.png u img/og-image.jpg (JPG da bude mali za WhatsApp preview).
+-->
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Pinyon+Script&family=Poppins:wght@300;400;600&display=block" rel="stylesheet">
+<style>
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    background:
+      radial-gradient(ellipse 60% 70% at 72% 40%, rgba(255,95,174,.16), transparent 70%),
+      radial-gradient(circle at 30% 50%, #15151c 0%, #050507 70%);
+    color: #f5f5fa;
+    font-family: "Poppins", sans-serif;
+    display: flex; align-items: center;
+    position: relative;
+  }
+  .text { position: relative; z-index: 2; padding-left: 90px; width: 640px; }
+  .eyebrow { letter-spacing: .4em; text-transform: uppercase; color: #ff9fd0; font-size: 26px; margin: 0; }
+  .name { font-family: "Pinyon Script", cursive; font-size: 190px; line-height: .95; margin: 10px 0 0; text-shadow: 0 0 30px rgba(255,255,255,.25); }
+  .row { display: flex; align-items: center; gap: 26px; margin-top: 4px; }
+  .puni { letter-spacing: .5em; text-transform: uppercase; color: #c9c9d4; font-size: 28px; }
+  .age {
+    font-family: "Monoton", sans-serif; font-size: 150px; line-height: 1;
+    background: linear-gradient(180deg,#fff 0%,#e9e9f2 22%,#8b8b99 48%,#f2f2f8 54%,#b4b4c2 72%,#fff 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .date { font-size: 32px; color: #c9c9d4; margin: 14px 0 0; }
+  .date b { color: #ff5fae; font-weight: 400; margin: 0 10px; }
+  .ball-wrap { position: absolute; right: 110px; top: 0; display: flex; flex-direction: column; align-items: center; }
+  .string { width: 3px; height: 120px; background: linear-gradient(#8e8e9c, #c9c9d4); }
+  canvas { width: 380px; height: 380px; filter: drop-shadow(0 0 50px rgba(255,255,255,.3)) drop-shadow(0 0 90px rgba(255,95,174,.25)); }
+  .spot { position: absolute; width: 10px; height: 10px; transform: rotate(45deg); background: #fff; box-shadow: 0 0 14px 3px rgba(255,255,255,.6); opacity: .6; }
+</style>
+</head>
+<body>
+  <div class="text">
+    <p class="eyebrow">Disco Girl Party</p>
+    <p class="name">Coka</p>
+    <div class="row"><span class="puni">puni</span><span class="age">20</span></div>
+    <p class="date">Četvrtak, 26. novembar <b>•</b> 20:00</p>
+  </div>
+  <div class="ball-wrap"><span class="string"></span><canvas id="b" width="380" height="380"></canvas></div>
+  <span class="spot" style="left:610px;top:90px"></span>
+  <span class="spot" style="left:700px;top:520px;width:7px;height:7px"></span>
+  <span class="spot" style="left:1120px;top:560px"></span>
+  <span class="spot" style="left:560px;top:470px;width:6px;height:6px"></span>
+  <span class="spot" style="left:1150px;top:80px;width:7px;height:7px;background:#ff9fd0"></span>
+  <span class="spot" style="left:960px;top:40px;width:6px;height:6px"></span>
+  <script src="../js/disco-ball.js"></script>
+  <script>
+    var ball = new DiscoBall(document.getElementById("b"), { rows: 18 });
+    ball.rot = 0.4; ball.time = 3.3;
+    ball.draw();
+  </script>
+</body>
+</html>
