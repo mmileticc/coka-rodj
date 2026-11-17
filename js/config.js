@@ -6,6 +6,13 @@
  * ============================================================
  */
 window.INVITE = {
+  /* ---------- Režim pregleda ----------
+   * true  = slike koje fale prikazuju se kao prugasti placeholder i na javnom sajtu
+   *         (zgodno dok se sajt pravi i pregleda sa telefona)
+   * false = slike koje fale se ne prikazuju (OVO STAVI PRE SLANJA LINKA GOSTIMA)
+   */
+  prikaziPlaceholdere: true,
+
   /* ---------- Osnovno ---------- */
   ime: "Coka",
   godine: 20,

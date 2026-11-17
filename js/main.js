@@ -43,7 +43,7 @@
    */
   function loadImage(img, src, onMissing) {
     img.addEventListener("error", function () {
-      if (isLocal) {
+      if (isLocal || C.prikaziPlaceholdere) {
         var ph = el("div", "img-missing", "Ubaci sliku:\n" + src);
         img.replaceWith(ph);
       } else if (onMissing) {
