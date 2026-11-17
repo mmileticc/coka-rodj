@@ -318,6 +318,10 @@ body.party .ball-wrap::after { opacity: 1; }
   margin-top: 6px;
   line-height: 1.1;
 }
+.polaroid.photo-full { max-width: min(760px, 94vw); }
+.polaroid.photo-full img { aspect-ratio: auto; object-fit: contain; }
+.polaroid.photo-full.tilt-left { transform: rotate(-1deg); }
+.polaroid.photo-full.tilt-right { transform: rotate(1deg); }
 .tilt-left { transform: rotate(-3deg); }
 .tilt-right { transform: rotate(3deg); }
 .polaroid:hover { transform: rotate(0) scale(1.03); }

@@ -63,15 +63,16 @@
     lightbox.show();
   }
 
-  function photoTile(item, colCls, tiltIdx) {
+  function photoTile(item, colCls, tiltIdx, figCls) {
     var col = el("div", colCls + " reveal");
-    var fig = el("figure", "polaroid " + (tiltIdx % 2 ? "tilt-right" : "tilt-left"));
+    var fig = el("figure", "polaroid " + (tiltIdx % 2 ? "tilt-right" : "tilt-left") + (figCls ? " " + figCls : ""));
     var btn = el("button", "polaroid-btn");
     btn.type = "button";
     btn.setAttribute("aria-label", "Uvećaj sliku" + (item.opis ? ": " + item.opis : ""));
     var img = el("img");
     img.alt = item.opis || "";
-    img.loading = "lazy";
+    // cele slike nemaju unapred poznatu visinu, pa se učitavaju odmah
+    img.loading = figCls ? "eager" : "lazy";
     btn.appendChild(img);
     fig.appendChild(btn);
     if (item.opis) fig.appendChild(el("figcaption", null, item.opis));
@@ -93,7 +94,8 @@
 
   var ulazGrid = $("#ulaz-grid");
   (C.slike.ulaz || []).forEach(function (item, i) {
-    ulazGrid.appendChild(photoTile(item, "col-sm-8 col-md-6 col-lg-4", i + 1));
+    // slike ulaza se prikazuju cele (bez sečenja), da se vide oznake na njima
+    ulazGrid.appendChild(photoTile(item, "col-12 col-lg-10", i + 1, "photo-full"));
   });
 
   var inspoGrid = $("#inspo-grid");

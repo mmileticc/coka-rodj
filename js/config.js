@@ -82,7 +82,7 @@ window.INVITE = {
 
     // Slike za lakše pronalaženje zgrade
     ulaz: [
-      { src: "img/ulaz.jpg", opis: "Ovde je ulaz u zgradu" },
+      { src: "img/ulaz.jpg", opis: "Ulaz levo ✓, ne desno ✗" },
     ],
 
     // Outfit inspiracija (dodaj ili obriši koliko hoćeš)
